@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+    <style>
+        head{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .cv-container {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left-column {
+    width: 30%;
+    padding: 20px;
+    background-color: #012340;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #fff;
+    position: relative;
+  }
+  
+  .line {
+    width: 5px;
+    height: 100%;
+    background-color: #00192d;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .photo img {
+    max-width: 100%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .contact h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 18px;
+    color: #cde0f9;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #012340;
+  }
+  
+  .content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-right: 5px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .contact-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .contact-list li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .contact-list a {
+    color: #012340;
+    text-decoration: none;
+  }
+  
+  .contact-list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .cv-container {
+      flex-direction: column;
+    }
+  
+    .left-column, .line {
+      width: 100%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+  
+    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style">
+  <title>Hoja de vida</title>
+</head>
+<body>
+  <div class="cv-container">
+    <div class="left-column">
+      <div class="line"></div>
+      <div class="photo">
+        <img src="pngtree-vector-users-icon-png-image_856952.jpg" alt="Foto de Juan Diego Correa">
+      </div>
+      <div class="contact">
+        <h1>Juan D  </h1>
+        <p class="title">Desarrollador de Software</p>
+        <ul class="contact-list">
+          <li><span class="icon">&#128222;</span> Dirección: Clle 20 # 54-84</li>
+          <li><span class="icon">&#128241;</span> Teléfono: 0005000</li>
+          <li><span class="icon">&#9993;</span> Correo: juand@hotmail.com</li>
+          <li><span class="icon">&#128373;</span> <a href="https://support.microsoft.com/es-es/office/c%C3%B3mo-iniciar-sesi%C3%B3n-en-hotmail-c378938b-c0eb-40c1-b99e-338dd9e776a8" target="_blank">LinkedIn</a></li>
+          <li><span class="icon">&#128187;</span> <a href="https://github.com/" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="right-column">
+      <header>
+        <li> <h1>Nombre:  Juan D</h1></li>
+        <p>Desarrollador de Software</p>
+      </header>
+      <section class="objectives">
+        <h2>Objetivos</h2>
+        <p>Apasionado por el desarrollo de aplicaciones móviles y la creación de soluciones web innovadoras.</p>
+      </section>
+      <section class="experience">
+        <ol>
+          <li>2018-2021<strong>Caza ofertas(independiente)</strong></li>
+          <li>2021-2022<strong>operador maquinaria</strong></li>
+          <li>2022-2023<strong>mececanico maquinaria pesada</strong></li> 
+      </ol>   
+
+      </section>
+      <section class="education">
+        <h2 class="title-content-2">intereses</h2>
+        <table>
+           <tr>
+             <td>El manejo de los lenguajes.</td>
+             <td>El diseño de aplicaciones movile.</td>
+             <td>La creacion de paginas web.</td>
+           </tr>
+           <tr>
+             <td>Esto permite crear cualquier tipo de proyecto.</td>
+             <td>ayudar abrir mas oportunidades laborales.</td>
+             <td>permite llevar acabo proyectos.</td>
+           </tr>
+        </table> 
+
+      </section>
+      <section class="skills">
+        <ul>
+          <li>Programador front end.</li>
+          <li>Programador backend.</li>
+          <li>Desarrollador full stack. </li>
+        </ul>
+      </section>
+      <section class="language">
+        <h2>Idioma</h2>
+        <p>Español</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
