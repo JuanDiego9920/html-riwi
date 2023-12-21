@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Hola Usuario </h1>
+    <button onclick="exit()">Cerrar sesion XD</button>
+    
+
+    <script>
+        auth = sessionStorage.getItem('auth');
+
+        if(auth!=1){
+            
+            sessionStorage.setItem('auth', 0) 
+            location.href = 'index.html';
+        }
+        function exit(){
+            
+            sessionStorage.setItem('auth', 0)
+            location.href = 'index.html';
+            
+        }
+    </script>
+
+</body>
+</html>

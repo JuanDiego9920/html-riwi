@@ -1,0 +1,16 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    text-align: center;
+    
+}
+
+#boton{
+    width: 450px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 255, 0.568);
+    border: none;
+}
